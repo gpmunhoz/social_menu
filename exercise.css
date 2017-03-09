@@ -1,0 +1,60 @@
+body,html{margin:0}
+
+   .share_menu {
+        display: inline-block;
+        width: auto;
+        margin: 0;
+        height: 96px;
+        position: relative;
+    }
+    .share_bt {
+        height: 100%;
+        width: 100%;
+        display: block;
+        cursor: pointer;
+        line-height: 96px;
+        height: 96px;
+        z-index: 2;
+        position: relative;
+    }
+    .hidden_itens:hover ~ .share_bt {
+        z-index: 0;
+    }
+   .hidden_itens {
+        position: absolute;
+        top: 0;
+        display: block;
+        z-index: 1;
+        height: 0;
+        width: 180px;
+        padding-left: 96px;
+    }
+    
+    .share_menu:active .hidden_itens {
+        height: 96px;
+		width:100%;
+        z-index: 3;
+    }
+    
+    .hidden_itens:hover {
+        height: 123px;
+        z-index: 3;
+    }
+    
+    
+    .hidden_itens ul {
+        background: #fff;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        height: 100%;
+		display: inline-flex;
+    }
+    .hidden_itens li {
+        list-style: none;
+        text-align: left;
+        line-height: 96px;
+        height: 96px;
+        padding-left: 10px;
+        border-top: 1px solid #ccc;
+    }
